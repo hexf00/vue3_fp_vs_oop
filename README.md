@@ -8,6 +8,9 @@ Vue3 中添加 组合式API 类似于 React Hooks ，它让我们用 fp 风格�
 - fp 函数内需要额外的注入实现，来自于参数或者是useXXX。也可能这是一种刻意设计，less is more。
 - fp 中的 视图层 与 业务层 没有 接口 显式 的依赖约束和关联。这增加了开发者的心智负担。
 
+## oop 不足
+- 在 template 中处理事件时，this的指向可能会丢失，需要使用箭头函数包裹，例 `@focus="() => service.focus()"`
+
 ## 其它注意项
 - oop + reactive 方式，service 类 `constructor` 中使用的 this 并非 `reactive` 函数返回的 `Proxy` 对象，所以构造函数中this属性的访问是不具有响应式的，需要显式的通过 `reactive(this)` 来实现响应式，或者在外部调用，reactive库内部已经通过Map实现了缓存，所以也不需要担心性能问题。
 
