@@ -6,9 +6,9 @@ Vue3 中添加 组合式API 类似于 React Hooks ，它让我们用 fp 风格�
 
 ## fp 特点
 - [组合式函数][composables]内有3种注入实现：
-  - ① 参数注入
-  - ② 通过 `import` 或 `useXXX` 注入全局性的内容
-  - ③ 通过`const token = ref()`注入组件、DOM，需要在 `onMounted` 或 `Watch` 中访问。
+  1. 参数注入
+  1. 通过 `import` 或 `useXXX` 注入全局性的内容
+  1. 通过`const token = ref()`注入组件、DOM，需要在 `onMounted` 或 `Watch` 中访问。
 
 ## fp 不足
 - `Watch` 中对 ref 注入的判断可能会带来心智负担
