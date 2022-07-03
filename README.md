@@ -5,7 +5,10 @@ Vue3 中添加 组合式API 类似于 React Hooks ，它让我们用 fp 风格�
 这种 fp 未必是真正的fp，只是写起来、看起来像fp。但相比 HOC 和 mixin 两种方案，fp让开发者具有更好组织代码结构的能力，可以更好的去提升代码的可维护性(可复用、可拓展、可读)。
 
 ## fp 特点
-- [组合式函数][composables]内有3种注入实现，① 参数注入，② 通过 `import` 或 `useXXX` 注入全局性的内容，③ 通过`const token = ref()`注入组件、DOM，需要在 `onMounted` 或 `Watch` 中访问。
+- [组合式函数][composables]内有3种注入实现：
+  - ① 参数注入
+  - ② 通过 `import` 或 `useXXX` 注入全局性的内容
+  - ③ 通过`const token = ref()`注入组件、DOM，需要在 `onMounted` 或 `Watch` 中访问。
 
 ## fp 不足
 - `Watch` 中对 ref 注入的判断可能会带来心智负担
