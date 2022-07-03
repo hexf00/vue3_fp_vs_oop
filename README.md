@@ -8,6 +8,7 @@ Vue3 中添加 组合式API 类似于 React Hooks ，它让我们用 fp 风格�
 - [组合式函数][composables]内有3种注入实现，① 参数注入，② 通过 `import` 或 `useXXX` 注入全局性的内容，③ 通过`const token = ref()`注入组件、DOM，需要在 `onMounted` 或 `Watch` 中访问。
 
 ## fp 不足
+- `Watch` 中对 ref 注入的判断可能会带来心智负担
 - fp 中的 视图层 与 业务层 缺乏 显式的约束依赖和有效关联的手段，这会增加开发者的心智负担，oop中通过类实现接口 (`implements`) 可以轻松做到这点。
 
 ## oop 不足
