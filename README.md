@@ -32,5 +32,6 @@ Vue3 中添加 组合式API 类似于 React Hooks ，它让我们用 fp 风格�
 
 
 
-[composables]: https://staging-cn.vuejs.org/guide/reusability/composables.html
+[composables]: https://staging-cn.vuejs.org/guide/reusability/composables.html 
+https://staging-cn.vuejs.org/guide/reusability/composables.html
 
